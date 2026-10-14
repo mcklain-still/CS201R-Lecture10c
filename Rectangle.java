@@ -8,18 +8,21 @@ public class Rectangle extends GeometricObject{
     private int height;
 
     public Rectangle(){
+        super();
         width = 0;
         height = 0;
     }
 
     //EX1:  ADD CALL TO SUPER
     public Rectangle (int w, int h){
+        super();
         width = w; 
         height = h;
     }
 
     //EX1: ADD CALL TO SUPER
     public Rectangle(int w, int h,String color, boolean filled) {
+        super(color, filled);
         width = w; 
         height = h;
     }
@@ -31,9 +34,9 @@ public class Rectangle extends GeometricObject{
     public void   setheight(int h) {this.height = h;}
 
     //EX1: COMPLETE THESE FUNCTIONS
-    public double getArea() { return 0;}
-    public double getPerimeter() { return 0;}
-    public boolean equals(Rectangle r){return false;  }
+    public double getArea() { return width * height;}
+    public double getPerimeter() { return 2 * (width + height);}
+    public boolean equals(Rectangle rhs){return this.width == rhs.width && this.height == rhs.height;}
 
     //ADD GETDATECREATED()
     public String toString() {

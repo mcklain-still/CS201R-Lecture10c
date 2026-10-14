@@ -1,0 +1,14 @@
+{
+  "features": {
+    "ghcr.io/devcontainers-extra/features/ant-sdkman:2": {
+      "version": "2.0.16",
+      "resolved": "ghcr.io/devcontainers-extra/features/ant-sdkman@sha256:9df0c3905404f8f960817b939892b4f4efb753a7ed808862f6fc8b6dca8df7b5",
+      "integrity": "sha256:9df0c3905404f8f960817b939892b4f4efb753a7ed808862f6fc8b6dca8df7b5"
+    },
+    "ghcr.io/devcontainers/features/java:1": {
+      "version": "1.8.3",
+      "resolved": "ghcr.io/devcontainers/features/java@sha256:61a839211feda1e2a1f10646648a948e733e4d98d770f3a4b6698a3c5fc92abe",
+      "integrity": "sha256:61a839211feda1e2a1f10646648a948e733e4d98d770f3a4b6698a3c5fc92abe"
+    }
+  }
+}

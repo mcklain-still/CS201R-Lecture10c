@@ -1,3 +1,6 @@
+
+import java.util.Date;
+
 public class Triangle extends GeometricObject{
     private int s1, s2, s3;
 
@@ -5,6 +8,7 @@ public class Triangle extends GeometricObject{
     
     //ADD CALL TO SUPER
     public Triangle (int s1, int s2, int s3){
+        super();
         this.s1 = s1; 
         this.s2 = s2; 
         this.s3 = s3; 
@@ -12,6 +16,10 @@ public class Triangle extends GeometricObject{
 
     //COMPLETE CONSTRUCTOR
     public Triangle(int s1, int s2, int s3, String color, boolean filled) {
+        super(color, filled);
+        this.s1 = s1; 
+        this.s2 = s2; 
+        this.s3 = s3; 
     }
 
     //COMPLETE GETAREA
@@ -20,11 +28,12 @@ public class Triangle extends GeometricObject{
 
     //COMPLETE GETPERIMETER
     @Override
-    public double getPerimeter() {return 0;}
+    public double getPerimeter() {return s1 + s2 + s3;}
+
 
 
     //ADD GETDATECREATED()
-
+    public Date getDateCreated() {return super.getDateCreated();}
 
     public String toString() {
         return "The Triangle was created on "  + 
@@ -33,7 +42,7 @@ public class Triangle extends GeometricObject{
     }
 
     //COMPLETE EQUALS
-    public boolean equals(Triangle r){return false; }
+    public boolean equals(Triangle rhs){return this.s1 == rhs.s1 && this.s2 == rhs.s2 && this.s3 == rhs.s3; }
     
 
     //COMPLETE COMPARETO
